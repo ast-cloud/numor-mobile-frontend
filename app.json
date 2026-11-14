@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Numor",
+    "slug": "numor",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "numor",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "app.numor.mobile"
+    },
+    "android": {
+      "package": "app.numor.mobile",
+      "adaptiveIcon": {
+        "backgroundColor": "#0ea472",
+        "foregroundImage": "./assets/images/android-icon-foreground.png"
+      },
+      "softwareKeyboardLayoutMode": "resize"
+    },
+    "web": {
+      "output": "single",
+      "bundler": "metro",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#ffffff",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 96
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Numor needs access to your photos to upload receipts, logos and profile pictures.",
+          "cameraPermission": "Numor needs access to your camera to capture receipts."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}
